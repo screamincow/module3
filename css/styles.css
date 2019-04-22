@@ -1,0 +1,142 @@
+body {
+    font-size: 16px;
+    color: #999;
+    background-color: #F2F2F2;
+    font-family: 'Lato', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #0D47A1;
+    border-radius: 0;
+    border: 0;
+    min-height: 100px;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    /* Restaurant name */
+    font-family: 'Roboto', sans-serif;
+    color: #E3F2FD;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand h1 a:hover,
+.navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+#nav-list a {
+    color: #E3F2FD;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #E3F2FD;
+    color: #0D47A1;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #E3F2FD;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+p {
+    margin: 25px 15px 15px 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+h2 {
+    color: #0D47A1;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #666666;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+    margin: 8px;
+    padding: 8px;
+    background-color: #FFF;
+    float: left;
+    border: 1px solid #BDBDBD;
+}
+
+div .section a {
+    color: #212121;
+    padding-right: 10px;
+}
+
+div .section a:hover {
+    color: #0D47A1;
+    text-decoration: none;
+}
+
+/* END HOME PAGE */
+
+/********** Desktop - md based devices only **********/
+@media (min-width: 992px) {
+
+    /* HOME PAGE */
+    .col-md-4 {
+        padding: 0px;
+    }
+}
+
+/* END HOME PAGE */
+
+/********** Tablet - sm based devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* HOME PAGE */
+    .col-sm-6,
+    .col-xs-12 {
+        padding: 0px;
+    }
+}
+
+/* END HOME PAGE */
+
+/********** Mobile - xs based devices only **********/
+@media (max-width: 767px) {
+
+    /* HEADER */
+    .navbar-brand {
+        margin-top: 8px;
+    }
+
+    .navbar-brand h1 {
+        /* Restaurant name */
+        font-size: 4vw;
+        /* 1vw = 1% of viewport width */
+        margin-top: 0px;
+    }
+
+    /* END HEADER */
+}
